@@ -4,5 +4,9 @@
   "displayName": "Unity Upgrade Bridge",
   "description": "Detects selected Unity API migration risks.",
   "unity": "6000.3",
-  "license": "MPL-2.0"
+  "license": "MPL-2.0",
+  "author": {
+    "name": "Regina Lopatin",
+    "url": "https://github.com/rilopatin"
+  }
 }
