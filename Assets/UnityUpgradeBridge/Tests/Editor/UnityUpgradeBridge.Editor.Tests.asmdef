@@ -1,0 +1,13 @@
+{
+  "name": "UnityUpgradeBridge.Editor.Tests",
+  "rootNamespace": "UnityUpgradeBridge.Editor.Tests",
+  "references": [
+    "UnityUpgradeBridge.Editor"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ]
+}
