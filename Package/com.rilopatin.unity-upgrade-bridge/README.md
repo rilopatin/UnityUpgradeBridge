@@ -1,5 +1,7 @@
 # Unity Upgrade Bridge
 
+> **Beta:** This is an experimental report-only tool. It may produce false positives or miss issues. Always review findings manually before changing project code.
+
 Small Unity Editor tool for detecting selected API migration risks in Unity 6.x projects.
 
 ## Current v0.1 rules
