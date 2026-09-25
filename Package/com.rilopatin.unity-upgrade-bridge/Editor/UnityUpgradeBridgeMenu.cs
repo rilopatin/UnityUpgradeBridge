@@ -14,9 +14,12 @@ namespace UnityUpgradeBridge.Editor
                 "*.cs",
                 SearchOption.AllDirectories);
 
+            var findingCount = 0;    
+
             foreach (var finding in Uub001SourceScanner.Scan(sourceFiles))
             {
                 var projectPath = FileUtil.GetProjectRelativePath(finding.File).Replace('\\', '/');
+                findingCount++;
                 Debug.Log(
                     $"{projectPath}, line {finding.Line}, {finding.RuleId}, {finding.Explanation}");
             }
@@ -24,6 +27,7 @@ namespace UnityUpgradeBridge.Editor
             foreach (var finding in Uub002SourceScanner.Scan(sourceFiles))
             {
                 var projectPath = FileUtil.GetProjectRelativePath(finding.File).Replace('\\', '/');
+                findingCount++;
                 Debug.Log(
                     $"{projectPath}, line {finding.Line}, {finding.RuleId}, {finding.Explanation}");
             }
@@ -31,9 +35,11 @@ namespace UnityUpgradeBridge.Editor
             foreach (var finding in Uub003SourceScanner.Scan(sourceFiles))
             {
                 var projectPath = FileUtil.GetProjectRelativePath(finding.File).Replace('\\', '/');
+                findingCount++;
                 Debug.Log(
                     $"{projectPath}, line {finding.Line}, {finding.RuleId}, {finding.Explanation}");
             }
+            Debug.Log($"Unity Upgrade Bridge: scan complete — {findingCount} finding(s).");
         }
     }
 }
