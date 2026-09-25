@@ -1,0 +1,7 @@
+{
+  "name": "UnityUpgradeBridge.Editor",
+  "rootNamespace": "UnityUpgradeBridge.Editor",
+  "includePlatforms": [
+    "Editor"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "com.rilopatin.unity-upgrade-bridge",
+  "version": "0.1.0",
+  "displayName": "Unity Upgrade Bridge",
+  "description": "Detects selected Unity API migration risks.",
+  "unity": "6000.3"
+}
